@@ -70,7 +70,7 @@ func (r *RGT) GetResources(clusterName *string) (*Resources, error) {
 			},
 			TagFilters: []*resourcegroupstaggingapi.TagFilter{
 				&resourcegroupstaggingapi.TagFilter{
-					Key: aws.String("kubernetes.io/role/elb"),
+					Key: aws.String("kubernetes.io/role/elb"), 
 				},
 				&resourcegroupstaggingapi.TagFilter{
 					Key:    aws.String("kubernetes.io/cluster/" + *clusterName),
